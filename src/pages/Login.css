@@ -1,0 +1,25 @@
+/* SplitPage.css */
+.container {
+    display: flex;
+    justify-content: space-between; 
+    padding: 100px 100px; 
+    gap: 40px; 
+}
+
+  
+  .left-side, .right-side {
+    flex: 1;
+    min-width: 85%; /* En dispositivos móviles, ocupará todo el ancho */
+    background-color: #f0f0f0;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  @media (max-width: 768px) {
+    .container{
+        display: block;
+    }
+    .left-side, .right-side {
+        width: 100%;
+    }
+  }

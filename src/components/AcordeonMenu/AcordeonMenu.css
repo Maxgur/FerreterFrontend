@@ -1,0 +1,23 @@
+.accordion-container {
+    position: -webkit-sticky; 
+    position: sticky;
+    top: 0;
+    margin-top: 50px; 
+    height: calc(70vh);
+    overflow-y: auto; 
+    width: 240px; 
+  }
+
+  @media (max-width: 1024px) {
+    .accordion-container {
+      width: 200px; 
+    }
+  }  
+
+  @media (max-width: 768px) {
+    .accordion-container {
+      width: 250px; 
+      height: auto; 
+      position: relative; 
+      box-shadow: none;
+    }}

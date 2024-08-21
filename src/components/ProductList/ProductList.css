@@ -1,0 +1,81 @@
+.product-list-container {
+    display: flex;
+    min-height: 100vh; 
+    margin-top: 40px;
+  }
+  
+  .product-content {
+    flex-grow: 1;
+    padding-top: 20px;
+  }
+  
+  .product-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+  }
+  
+  .color-options {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: auto;
+  }
+  
+  .color-option {
+    width: 20px;
+    height: 20px;
+    border-radius: 10%;
+    margin: 0 5px;
+    border: none;
+    display: inline-block;
+  }
+  .color-option.selected {
+    border: 2px solid black;
+  }
+  .pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+  }
+  
+  .pagination button {
+    background-color: #f0f0f0;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    color: #333;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    margin: 0 5px;
+    padding: 10px 15px;
+    transition: background-color 0.3s, border-color 0.3s;
+  }
+  
+  .pagination button:hover {
+    background-color: #e0e0e0;
+    border-color: #ccc;
+  }
+  
+  .pagination button:disabled {
+    cursor: not-allowed;
+    background-color: #d0d0d0;
+    border-color: #bbb;
+    color: #888;
+  }
+  
+  .btn-buy{
+    padding-left: 10px;
+    font-size: 20px;
+  }
+  
+  @media (max-width: 768px) {
+    .product-list-container {
+      display: block;
+    }
+    .product-content{
+      padding: 0px;
+    }
+  }
